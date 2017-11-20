@@ -6,7 +6,7 @@ const Link = ({active, children, onClick}) => {
     return <span>{children}</span>;
   }
   return (
-    <a href="#"
+    <a href={children}
       onClick={e => {
         e.preventDefault();
         onClick();
